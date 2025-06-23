@@ -70,7 +70,7 @@ const App = () => {
         >
           <div className="flex justify-between items-center w-full">
             <Link
-              to= {"/berandap"}
+              to={"/berandap"}
               className="w-10 h-10 bg-[rgba(167,146,119,0.2)] rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-110"
             >
               <i className="fas fa-chevron-left text-gray-600"></i>
@@ -145,11 +145,7 @@ const App = () => {
               <Link to={`/Infomenu/${item.nama_menu}`} key={index}>
                 <div className="bg-[rgba(167,146,119,0.2)] p-3 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105 duration-300">
                   <img
-                    src={
-                      publicUrl +
-                      "/images/menu/" +
-                      (item.gambar || "default-image.jpg")
-                    }
+                    src={`https://gzqnvvklxvthtkvzbfct.supabase.co/storage/v1/object/public/uploads/menu/${item.gambar}`}
                     alt={item.nama_menu}
                     className="w-full h-24 sm:h-28 md:h-40 object-cover rounded-lg mb-2"
                   />

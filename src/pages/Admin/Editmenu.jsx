@@ -31,7 +31,7 @@ function App() {
 
       setMenu(menulist.data);
       const image = await fetch(
-        publicUrl + "/images/menu/" + menulist.data.gambar
+        `https://gzqnvvklxvthtkvzbfct.supabase.co/storage/v1/object/public/uploads/menu/${menulist.data.gambar}`
       );
       const blob = await image.blob();
       const file = new File([blob], menulist.data.gambar, { type: blob.type });

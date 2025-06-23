@@ -379,7 +379,7 @@ const rataRataPendapatanPerBulan =
                 <img
                   src={
                     riwayat.menu?.[0]?.gambar
-                      ? `${publicUrl}/images/menu/${riwayat.menu[0].gambar}`
+                      ? `https://gzqnvvklxvthtkvzbfct.supabase.co/storage/v1/object/public/uploads/menu/${riwayat.menu[0].gambar}`
                       : `${publicUrl}/images/default-image.jpg`
                   }
                   alt="Food item"

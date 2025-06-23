@@ -72,7 +72,7 @@ const Homepage = () => {
       className="bg-[rgba(167,146,119,0.2)] p-2 rounded-lg relative w-40 sm:w-48 md:w-56 flex-shrink-0 mb-5 shadow-lg"
     >
       <img
-        src={publicUrl + "/images/menu/" + img}
+        src={`https://gzqnvvklxvthtkvzbfct.supabase.co/storage/v1/object/public/uploads/menu/${img}`}
         alt={name}
         className="w-full h-24 sm:h-28 md:h-40 object-cover rounded-lg mb-2"
       />
@@ -120,7 +120,7 @@ const Homepage = () => {
         </div>
         <div>
           <img
-            src={publicUrl + "/images/menu/" + image}
+            src={`https://gzqnvvklxvthtkvzbfct.supabase.co/storage/v1/object/public/uploads/menu/${image}`}
             className=" h-25 "
             alt={title}
           />

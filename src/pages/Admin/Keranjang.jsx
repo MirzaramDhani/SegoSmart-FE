@@ -214,7 +214,7 @@ const App = () => {
       key={index}
     >
       <img
-        src={publicUrl + "/images/menu/" + image}
+        src={`https://gzqnvvklxvthtkvzbfct.supabase.co/storage/v1/object/public/uploads/menu/${image}`}
         alt={title}
         className="w-12 h-12 rounded-lg mr-4 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20"
       />

@@ -140,7 +140,7 @@ const App = () => {
         {menuItems.map((item) => (
           <MenuItem
             key={item.id_menu}
-            image={publicUrl + "/images/menu/" + item.gambar}
+            image={`https://gzqnvvklxvthtkvzbfct.supabase.co/storage/v1/object/public/uploads/menu/${item.gambar}`}
             title={item.nama_menu}
             stok={item.stok}
             onDelete={() => {
@@ -162,7 +162,7 @@ const App = () => {
             </h2>
             <div className="flex justify-center space-x-4">
               <button
-                onClick={() => handleDeleteMenu(itemToDelete)} 
+                onClick={() => handleDeleteMenu(itemToDelete)}
                 className="bg-green-500 text-white px-6 py-3 rounded-md hover:bg-green-600"
               >
                 IYA

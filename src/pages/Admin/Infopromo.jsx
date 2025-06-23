@@ -44,9 +44,10 @@ const App = () => {
       describePromo
     ) => (
       <div>
-        <div 
-        data-aos ="slide-down"
-        className="bg-white rounded-lg mb-6 flex flex-col">
+        <div
+          data-aos="slide-down"
+          className="bg-white rounded-lg mb-6 flex flex-col"
+        >
           <div className="p-4">
             <h2 className="text-lg sm:text-xl font-bold">{titlePromo}</h2>
             <h3 className="text-2xl sm:text-3xl font-bold">{diskon}%</h3>
@@ -55,7 +56,7 @@ const App = () => {
             <div className="bg-gradient-to-r from-[rgba(0,0,0)] to-[rgba(167,146,119)] rounded-3xl p-4 flex items-center w-80 h-40">
               <div>
                 <img
-                  src={publicUrl + "/images/menu/" + image}
+                  src={`https://gzqnvvklxvthtkvzbfct.supabase.co/storage/v1/object/public/uploads/menu/${image}`}
                   className=" w-full object-contain max-h-64 sm:max-h-72 md:max-h-80 lg:max-h-96 xl:max-h-96 rounded-lg"
                   alt={title}
                 />
@@ -63,15 +64,19 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div 
-        data-aos ="slide-up"
-        className="flex justify-between items-center mb-4">
+        <div
+          data-aos="slide-up"
+          className="flex justify-between items-center mb-4"
+        >
           <h1 className="text-xl sm:text-2xl font-bold">{title}</h1>
-          <span className="text-xl sm:text-2xl font-bold">{formatRupiah(lastPrice)}</span>
+          <span className="text-xl sm:text-2xl font-bold">
+            {formatRupiah(lastPrice)}
+          </span>
         </div>
-        <p 
-        data-aos ="slide-up"
-        className="text-gray-600 leading-relaxed mb-6 text-sm sm:text-base text-justify">
+        <p
+          data-aos="slide-up"
+          className="text-gray-600 leading-relaxed mb-6 text-sm sm:text-base text-justify"
+        >
           {describePromo}
         </p>
       </div>

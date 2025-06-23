@@ -138,8 +138,8 @@ const App = () => {
         {menuItems.map((item) => (
           <MenuItem
             key={item.id}
-            id = {item.id}
-            image={publicUrl + "/images/menu/" + item.menu.gambar}
+            id={item.id}
+            image={`https://gzqnvvklxvthtkvzbfct.supabase.co/storage/v1/object/public/uploads/menu/${item.menu.gambar}`}
             discount={item.diskon}
             title={item.nama_promo}
             onDelete={handleDeleteClick}

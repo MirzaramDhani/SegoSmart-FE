@@ -148,7 +148,8 @@ const App = () => {
       <div className="mb-20">
         <header
           data-aos="slide-down"
-          className="flex flex-col justify-between items-center sticky top-0 p-4 bg-white bg-opacity-80 backdrop-blur-lg z-10">
+          className="flex flex-col justify-between items-center sticky top-0 p-4 bg-white bg-opacity-80 backdrop-blur-lg z-10"
+        >
           <div className="flex justify-between items-center w-full">
             <Link
               to="/Beranda"
@@ -226,7 +227,7 @@ const App = () => {
             {menu.map((item) => (
               <FoodItem
                 key={item.id_menu}
-                imgSrc={publicUrl + "/images/menu/" + item.gambar}
+                imgSrc={`https://gzqnvvklxvthtkvzbfct.supabase.co/storage/v1/object/public/uploads/menu/${item.gambar}`}
                 title={item.nama_menu}
                 price={formatRupiah(item.harga)}
                 stok={item.stok}

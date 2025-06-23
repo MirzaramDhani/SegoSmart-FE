@@ -28,25 +28,30 @@ const App = () => {
 
   const renderMenu = (image, title, price, describe) => (
     <div>
-      <div 
-      data-aos ="slide-down"
-      className="bg-transparent rounded-lg overflow-hidden mb-6 relative z-10">
+      <div
+        data-aos="slide-down"
+        className="bg-transparent rounded-lg overflow-hidden mb-6 relative z-10"
+      >
         <img
-          src={publicUrl + "/images/menu/" + image}
+          src={`https://gzqnvvklxvthtkvzbfct.supabase.co/storage/v1/object/public/uploads/menu/${image}`}
           alt={title}
           className="w-full object-contain h-56 sm:h-72 md:h-80 lg:h-96 xl:h-96 rounded-lg z-10 relative"
         />
       </div>
 
-      <div 
-      data-aos ="slide-up"
-      className="flex justify-between items-center mb-4">
+      <div
+        data-aos="slide-up"
+        className="flex justify-between items-center mb-4"
+      >
         <h1 className="text-xl sm:text-2xl font-bold">{title}</h1>
-        <span className="text-xl sm:text-2xl font-bold">{formatRupiah(price)}</span>
+        <span className="text-xl sm:text-2xl font-bold">
+          {formatRupiah(price)}
+        </span>
       </div>
-      <p 
-      data-aos ="slide-up"
-      className="text-gray-600 leading-relaxed mb-6 text-sm sm:text-base text-justify">
+      <p
+        data-aos="slide-up"
+        className="text-gray-600 leading-relaxed mb-6 text-sm sm:text-base text-justify"
+      >
         {describe}
       </p>
     </div>
