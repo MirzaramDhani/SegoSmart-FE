@@ -47,12 +47,20 @@ const App = () => {
     if (type === "all") {
       setMenu(originalMenu);
     } else {
-      const filteredMenu = originalMenu.filter(
-        (item) => item.kategori === type
-      );
+      const filteredMenu = originalMenu.filter((item) => {
+        console.log(
+          "Banding:",
+          item.kategori?.toLowerCase(),
+          type.toLowerCase()
+        );
+        return (
+          item.kategori?.trim().toLowerCase() === type.trim().toLowerCase()
+        );
+      });
+      console.log("Hasil filter:", filteredMenu);
       setMenu(filteredMenu);
     }
-  };
+  };  
 
   const formatRupiah = (number) => {
     return new Intl.NumberFormat("id-ID", {
