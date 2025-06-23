@@ -20,7 +20,7 @@ const App = () => {
       const response = await axios.get(`${apiUrl}/Promo/tampilPromo/All`)
 
       const promises = response.data.map((item) => {
-        return axios.get(`${apiUrl}/Menu//tampilMenu/Byid/${item.id_menu}`);
+        return axios.get(`${apiUrl}/Menu/tampilMenu/Byid/${item.id_menu}`);
       });
 
       const responses = await Promise.all(promises);
