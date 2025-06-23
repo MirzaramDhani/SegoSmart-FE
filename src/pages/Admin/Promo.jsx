@@ -19,6 +19,10 @@ const App = () => {
     async function fetchData() {
       const response = await axios.get(`${apiUrl}/Promo/tampilPromo/All`)
 
+      // const promises = response.data.map((item) => {
+      //   return axios.get(`${apiUrl}/Menu//tampilMenu/Byid/${item.id_menu}`);
+      // });
+
       const promises = response.data.map((item) => {
         return axios.get(`${apiUrl}/Menu/tampilMenu/Byid/${item.id_menu}`);
       });
