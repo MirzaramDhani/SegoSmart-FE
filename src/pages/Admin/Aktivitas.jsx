@@ -66,7 +66,7 @@ const App = () => {
       const promisesMenu = items.map(async (item) => {
         return await Promise.all(
           item.map((i) => {
-            return axios.get(`${apiUrl}/Menu//tampilMenu/Byid/${i.id_menu}`);
+            return axios.get(`${apiUrl}/Menu/tampilMenu/Byid/${i.id_menu}`);
           })
         );
       });
