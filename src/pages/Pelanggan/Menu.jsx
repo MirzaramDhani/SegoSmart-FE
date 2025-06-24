@@ -121,6 +121,16 @@ const App = () => {
               All
             </button>
             <button
+              onClick={() => handleFilterMenu("paket")}
+              className={`px-4 py-2 rounded-full font-semibold focus:outline-none transition-all duration-300 ease-in-out transform hover:scale-110 ${
+                activeFilter === "paket"
+                  ? "bg-[#A79277] text-white"
+                  : "bg-[rgba(167,146,119,0.2)] text-gray-500"
+              }`}
+            >
+              Paket
+            </button>
+            <button
               onClick={() => handleFilterMenu("makanan")}
               className={`px-4 py-2 rounded-full font-semibold focus:outline-none transition-all duration-300 ease-in-out transform hover:scale-110 ${
                 activeFilter === "makanan"

@@ -229,32 +229,6 @@ function App() {
               </div>
 
               <div className="flex flex-col space-y-2">
-                <div className="flex items-center space-x-4">
-                  <label className="block font-semibold w-1/4 text-left">
-                    Kategori
-                  </label>
-
-                  <div className="w-3/4">
-                    <Field
-                      as="select"
-                      name="kategori"
-                      className="w-full p-2 bg-[rgba(167,146,119,0.2)] rounded-md focus:outline-none cursor-pointer"
-                    >
-                      <option value="">Pilih Kategori</option>
-                      <option value="makanan">Makanan</option>
-                      <option value="minuman">Minuman</option>
-                    </Field>
-
-                    <ErrorMessage
-                      name="kategori"
-                      component="span"
-                      className="text-[#ff0000] text-sm block mt-1"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-col space-y-2">
                 <div className="flex items-start space-x-4">
                   <label className="block font-semibold w-1/4 text-left">
                     Deskripsi

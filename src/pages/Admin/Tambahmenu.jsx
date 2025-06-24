@@ -233,6 +233,7 @@ function App() {
                     className="w-full p-2 bg-[rgba(167,146,119,0.2)] rounded-md focus:outline-none cursor-pointer"
                   >
                     <option value="">Pilih Kategori</option>
+                    <option value="paket">Paket</option>
                     <option value="makanan">Makanan</option>
                     <option value="minuman">Minuman</option>
                   </Field>
